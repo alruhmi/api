@@ -17,6 +17,7 @@ class CreateLessonsTable extends Migration
             $table->bigIncrements('id');
             $table->string('title');
             $table->text('body');
+            $table->boolean('active');
             $table->timestamps();
         });
     }
